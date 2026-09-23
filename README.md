@@ -10,16 +10,17 @@
   <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
   <img src="https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=for-the-badge" alt="Matplotlib">
   <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
-  <img src="https://img.shields.io/badge/Excel-KPI%20Dashboard-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel">
+  <img src="https://img.shields.io/badge/Excel-KPI%20Dashboard-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Microsoft Excel">
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License">
 </p>
 
 **Data Analytics & AI Internship Project**
+
 *Comprehensive Retail Exploratory Data Analysis (EDA), Business Intelligence & Decision Support*
 
 <br>
 
-> **500 transactions • 4 cities • 5 product categories • 7 months • Multiple business dimensions**
+> **500 Transactions • 4 Cities • 5 Product Categories • 7 Months • Multiple Business Dimensions**
 
 <br>
 
@@ -27,341 +28,159 @@
 
 ---
 
-# 📌 Project Overview
+## 📌 Executive Summary
 
-The **Supermarket Sales Analysis & Business Intelligence** project transforms raw supermarket transaction data into meaningful business insights using **Python-based Exploratory Data Analysis (EDA)** and an **Excel-based Executive KPI Dashboard**.
+The **Supermarket Sales Analysis & Business Intelligence** project transforms raw supermarket transaction data into meaningful business insights using **Python, Pandas, NumPy, Matplotlib, Jupyter Notebook, and Microsoft Excel**.
 
-The analysis examines **500 supermarket transactions recorded from January to July 2026** across four major Indian cities:
+The project analyzes **500 supermarket sales transactions from January to July 2026**, covering major branches in:
 
-| Branch      | City      |
-| ----------- | --------- |
-| 🏪 Branch A | Jaipur    |
-| 🏪 Branch B | Delhi     |
-| 🏪 Branch C | Mumbai    |
-| 🏪 Branch D | Bengaluru |
+* 🇮🇳 Jaipur
+* 🇮🇳 Delhi
+* 🇮🇳 Mumbai
+* 🇮🇳 Bengaluru
 
-The project investigates:
+The analysis explores **sales performance, branch profitability, product and category revenue, customer behavior, payment preferences, monthly trends, and customer satisfaction**.
 
-* 💰 Revenue and sales performance
-* 🏪 Branch-level performance
-* 🛍️ Product and category performance
-* 📅 Monthly sales trends
-* 💳 Payment-method preferences
-* 👥 Member vs. normal-customer spending
-* ⭐ Customer satisfaction and ratings
-* 📦 Product-level revenue contribution
-* 📊 Business performance indicators
+The goal is to move beyond raw transaction records and answer an important business question:
 
-The objective is not simply to calculate statistics, but to answer a more important business question:
-
-> **What does the transaction data tell us about supermarket performance, customer behavior, product demand, and potential business opportunities?**
+> **What can supermarket transaction data reveal about customers, products, branches, sales trends, and opportunities for better business decisions?**
 
 ---
 
 # 🎯 Project Objectives
 
-The analysis was designed around the following objectives:
+This project was developed to:
 
-### 1. 📈 Understand Sales Performance
+* 📈 Analyze overall sales performance
+* 🏪 Compare branch-level performance
+* 📦 Identify high-performing products and categories
+* 👥 Understand customer purchasing behavior
+* 💳 Analyze payment-method preferences
+* 📅 Identify monthly sales patterns
+* ⭐ Examine customer satisfaction ratings
+* 🔎 Compare member and normal customers
+* 📊 Build meaningful business KPIs
+* 💡 Convert analytical findings into strategic recommendations
+* 📗 Present results through an executive Excel dashboard
 
-Identify high-performing branches, products, categories, and periods.
+---
 
-### 2. 👥 Analyze Customer Behavior
+# 📊 Project at a Glance
 
-Compare member and normal customers based on transaction values and purchasing patterns.
+<div align="center">
 
-### 3. 🏪 Evaluate Branch Performance
+|      📊 Dataset      | 🏪 Branches | 🌆 Cities |     📅 Period    |
+| :------------------: | :---------: | :-------: | :--------------: |
+| **500 Transactions** |    **4**    |   **4**   | **Jan–Jul 2026** |
 
-Determine differences in sales and customer satisfaction across locations.
+| 🛍️ Categories | 💳 Payment Analysis | ⭐ Rating Analysis | 📈 Sales Analysis |
+| :------------: | :-----------------: | :---------------: | :---------------: |
+|      **5**     |        **✓**        |       **✓**       |       **✓**       |
 
-### 4. 💳 Understand Payment Preferences
+</div>
 
-Identify the most frequently used payment methods and assess digital-payment adoption.
+---
 
-### 5. 📦 Identify High-Value Products
+# 🏗️ Analysis Workflow
 
-Determine which products contribute most strongly to total revenue.
-
-### 6. 📅 Discover Sales Trends
-
-Analyze monthly performance and identify periods of increased purchasing activity.
-
-### 7. 💡 Generate Business Recommendations
-
-Convert analytical findings into practical recommendations that can support inventory, customer engagement, branch operations, and payment strategies.
+```text
+                    ┌──────────────────────┐
+                    │    Raw Sales Data    │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Data Validation &    │
+                    │ Data Cleaning        │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Exploratory Data     │
+                    │ Analysis (EDA)       │
+                    └──────────┬───────────┘
+                               │
+             ┌─────────────────┼─────────────────┐
+             ▼                 ▼                 ▼
+      🏪 Branch          📦 Products       👥 Customers
+       Analysis           & Categories       & Members
+             │                 │                 │
+             └─────────────────┼─────────────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Payment & Monthly    │
+                    │ Trend Analysis       │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Data Visualization   │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Business Insights    │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Strategic Business   │
+                    │ Recommendations      │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Executive KPI        │
+                    │ Dashboard            │
+                    └──────────────────────┘
+```
 
 ---
 
 # 📊 Executive Dashboard
 
-The project includes an **Excel-based KPI dashboard** designed to provide a quick executive-level overview of supermarket performance.
+The project includes an **Excel-based Executive KPI Dashboard** designed to provide a concise overview of the supermarket's business performance.
 
-### 🔎 Dashboard Preview
-
-> 📌 **Place your final dashboard screenshot here**
->
-> Recommended file:
->
-> `charts/executive_dashboard.png`
-
-```text
-┌─────────────────────────────────────────────────────────────┐
-│                 SUPERMARKET SALES DASHBOARD                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  💰 TOTAL SALES        🏪 TOP BRANCH       📦 TOP CATEGORY │
-│                                                             │
-│  ₹XXX,XXX.XX           Mumbai              Beverages       │
-│                                                             │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│       📈 MONTHLY SALES TREND                                │
-│                                                             │
-│       [ Insert Monthly Sales Chart ]                        │
-│                                                             │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│       🛍️ CATEGORY PERFORMANCE      💳 PAYMENT MIX          │
-│                                                             │
-│       [ Category Chart ]          [ Payment Chart ]          │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-The complete dashboard is available in:
+### 📗 Dashboard File
 
 **`Supermarket_Sales_Dashboard.xlsx`**
 
----
+The dashboard brings together important performance indicators and analytical summaries to support quick business interpretation.
 
-# 📈 Key Analytical Visualizations
+### Dashboard Focus Areas
 
-The project combines numerical analysis with visual storytelling to make the findings easier to understand.
-
-## 🏪 1. Branch Performance
-
-**Branch C — Mumbai** generates the highest total sales among the analyzed branches.
-
-**Key finding:**
-
-> Branch C recorded approximately **₹72,469.45** in total sales, making it the highest-performing branch in the dataset.
-
-This provides an opportunity to investigate the operational and customer factors associated with its stronger sales performance.
+* 💰 Sales performance
+* 🏪 Branch performance
+* 📦 Category performance
+* 📅 Monthly sales
+* 💳 Payment methods
+* 👥 Customer behavior
+* ⭐ Customer satisfaction
 
 ---
 
-## 📦 2. Product & Category Revenue
+# 📈 Data Visualization Gallery
 
-The category analysis highlights the products and categories contributing most strongly to overall revenue.
+The project includes four key charts generated from the Python analysis.
 
-### 🥇 Highest-Revenue Product
+## 🏪 1. Branch Performance Analysis
 
-**Cheese — ₹27,906.30**
+Branch-level analysis compares sales performance across the four supermarket locations.
 
-### 🥇 Highest-Revenue Category
+<div align="center">
 
-**Beverages — ₹56,108.24**
+<img src="https://raw.githubusercontent.com/saviochackoxavier-tech/supermarket-sales-analysis/main/chart_branch.png" width="850" alt="Branch Performance Analysis">
 
-These results can help support:
+</div>
 
-* Inventory planning
-* Supplier negotiations
-* Promotional campaigns
-* Product bundling
-* Seasonal stocking decisions
+### 🔎 Key Finding
 
----
+**Branch C — Mumbai** generated the highest total sales at approximately:
 
-## 📅 3. Monthly Sales Trend
+### 💰 ₹72,469.45
 
-The monthly analysis shows that **April recorded the strongest sales activity** within the analyzed period.
-
-This indicates a potential seasonal purchasing pattern that could be investigated further using:
-
-* Historical sales data
-* Promotional calendars
-* Customer traffic
-* Product availability
-* Seasonal demand patterns
-
-> **Important:** The dataset covers only January–July 2026, so the observed pattern should be treated as a finding within this dataset rather than a definitive long-term seasonal trend.
-
----
-
-## 💳 4. Payment Method Analysis
-
-Digital payment methods represent a substantial proportion of transactions.
-
-### 🥇 Most Used Payment Method
-
-**UPI — 127 transactions (25.4%)**
-
-The analysis also considers:
-
-* UPI
-* Credit/Debit Card
-* Net Banking
-* Other available payment methods
-
-This provides insight into checkout behavior and digital-payment adoption.
-
----
-
-## 👥 5. Member vs. Normal Customers
-
-The analysis compares average transaction values between membership groups.
-
-| Customer Type   | Average Transaction |
-| --------------- | ------------------: |
-| Normal Customer |             ₹497.07 |
-| Member          |             ₹483.14 |
-
-An important observation is that **normal customers have a slightly higher average transaction value** in this dataset, despite the presence of a membership program.
-
-This suggests an opportunity to examine whether membership benefits are successfully encouraging higher basket values.
-
----
-
-## ⭐ 6. Customer Satisfaction
-
-The overall average customer rating is:
-
-### ⭐ **3.99 / 5.00**
-
-Branch-level ratings provide another dimension for understanding customer experience.
-
-For example:
-
-| Branch   | City      | Rating |
-| -------- | --------- | -----: |
-| Branch A | Jaipur    |   3.84 |
-| Branch D | Bengaluru |   4.09 |
-
-These differences can be used to identify areas where service quality, checkout experience, staffing, or store operations may require further investigation.
-
----
-
-# 📊 Key Metrics at a Glance
-
-| Analytical Dimension       | Key Finding                 |
-| -------------------------- | --------------------------- |
-| 🏆 Top Product             | Cheese — ₹27,906.30 revenue |
-| 🏪 Top Branch              | Branch C — Mumbai           |
-| 💰 Top Branch Sales        | ₹72,469.45                  |
-| 📦 Top Category            | Beverages                   |
-| 💵 Top Category Sales      | ₹56,108.24                  |
-| 💳 Preferred Payment       | UPI                         |
-| 📱 UPI Transactions        | 127                         |
-| 📊 UPI Share               | 25.4%                       |
-| 👤 Normal Avg. Transaction | ₹497.07                     |
-| 👥 Member Avg. Transaction | ₹483.14                     |
-| ⭐ Overall Rating           | 3.99 / 5.00                 |
-| 📅 Highest Sales Month     | April                       |
-| 🧾 Dataset Size            | 500 transactions            |
-| 🌆 Locations               | 4 cities                    |
-| 📆 Analysis Period         | January–July 2026           |
-
----
-
-# 📊 Visual Analytics Gallery
-
-The following section can showcase the charts generated from the Python analysis.
-
-> **Recommended folder:** `charts/`
-
-### 🏪 Branch Performance
-
-![Branch Performance](charts/branch_performance.png)
-
-*Comparison of sales performance across supermarket branches.*
-
----
-
-### 📦 Category Revenue Analysis
-
-![Category Revenue](charts/category_revenue.png)
-
-*Revenue contribution across major product categories.*
-
----
-
-### 📈 Monthly Sales Trend
-
-![Monthly Sales Trend](charts/monthly_sales.png)
-
-*Monthly sales trajectory from January to July 2026.*
-
----
-
-### 💳 Payment Method Distribution
-
-![Payment Methods](charts/payment_methods.png)
-
-*Distribution of transactions across payment methods.*
-
----
-
-### 👥 Member vs Normal Customer Analysis
-
-![Customer Analysis](charts/member_vs_normal.png)
-
-*Comparison of average transaction values between customer groups.*
-
----
-
-### ⭐ Customer Rating Analysis
-
-![Customer Ratings](charts/customer_ratings.png)
-
-*Comparison of customer satisfaction across branches.*
-
----
-
-# 🔍 Business Insights
-
-The analysis produced several notable findings.
-
-### 💰 Revenue Concentration
-
-Branch C — Mumbai generated the highest sales among the analyzed branches.
-
-### 🧀 Product Opportunity
-
-Cheese recorded the highest individual product revenue at **₹27,906.30**.
-
-### 🥤 Category Opportunity
-
-Beverages generated the highest category-level sales at **₹56,108.24**.
-
-### 📅 Monthly Opportunity
-
-April recorded the strongest sales activity during the analyzed period.
-
-### 📱 Digital Payment Adoption
-
-UPI was the most frequently used payment method, accounting for **127 transactions or 25.4%** of the dataset.
-
-### 👥 Membership Insight
-
-Normal customers recorded a slightly higher average transaction value than members:
-
-**₹497.07 vs ₹483.14**
-
-This provides a useful starting point for evaluating membership incentives.
-
-### ⭐ Customer Experience
-
-The overall rating of **3.99/5** indicates that customer satisfaction is an important additional business-performance dimension to monitor.
-
----
-
-# 💡 Strategic Business Recommendations
-
-The analytical findings can be translated into several practical business actions.
-
-## 🏪 1. Study the Success of Branch C
-
-Investigate the operational factors behind Mumbai's stronger sales performance, including:
+This makes Branch C an important location for further investigation into factors such as:
 
 * Product availability
 * Customer traffic
@@ -370,109 +189,250 @@ Investigate the operational factors behind Mumbai's stronger sales performance, 
 * Checkout efficiency
 * Local purchasing patterns
 
-Successful practices can then be evaluated for applicability at other branches.
+---
+
+## 📦 2. Category Revenue Analysis
+
+Category-level analysis identifies the product groups contributing most strongly to overall sales.
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/saviochackoxavier-tech/supermarket-sales-analysis/main/chart_category.png" width="850" alt="Category Revenue Analysis">
+
+</div>
+
+### 🔎 Key Finding
+
+**Beverages** generated the highest category-level sales:
+
+### 🥤 ₹56,108.24
+
+This finding can support inventory planning, supplier management, promotional strategies, and product bundling.
+
+---
+
+## 📅 3. Monthly Sales Trend
+
+The monthly sales chart examines transaction performance from January through July 2026.
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/saviochackoxavier-tech/supermarket-sales-analysis/main/chart_monthly.png" width="850" alt="Monthly Sales Trend">
+
+</div>
+
+### 🔎 Key Finding
+
+**April recorded the highest sales activity** within the analyzed period.
+
+Because the dataset covers only January–July 2026, this should be interpreted as an **observed pattern within the dataset**, rather than definitive evidence of a long-term seasonal trend.
+
+---
+
+## 💳 4. Payment Method Distribution
+
+Payment-method analysis provides insight into customer checkout preferences.
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/saviochackoxavier-tech/supermarket-sales-analysis/main/chart_payment.png" width="850" alt="Payment Method Distribution">
+
+</div>
+
+### 🔎 Key Finding
+
+**UPI** was the most frequently used payment method:
+
+### 📱 127 Transactions — 25.4%
+
+The results indicate substantial usage of digital payment methods across the analyzed transactions.
+
+---
+
+# 📌 Key Analytical Insights
+
+## 🏪 Branch Performance
+
+**Branch C — Mumbai** recorded the highest total sales among the analyzed branches.
+
+This makes the branch an interesting reference point for investigating operational practices and customer purchasing behavior.
+
+---
+
+## 📦 Category Performance
+
+**Beverages** were the highest-performing category with:
+
+### ₹56,108.24
+
+This indicates strong demand for beverage products within the analyzed dataset.
+
+---
+
+## 🧀 Product Performance
+
+The highest individual product revenue was generated by:
+
+### 🥇 Cheese — ₹27,906.30
+
+High-performing products can be important inputs for:
+
+* Inventory planning
+* Promotional campaigns
+* Supplier negotiations
+* Product bundling
+* Seasonal stocking
+
+---
+
+## 📅 Monthly Performance
+
+Sales peaked in **April** during the January–July 2026 observation period.
+
+Further data across multiple years would be required to determine whether this represents a repeatable seasonal pattern.
+
+---
+
+## 💳 Payment Preferences
+
+UPI was the most frequently used payment method:
+
+**127 transactions / 25.4%**
+
+This highlights the importance of maintaining reliable digital checkout infrastructure.
+
+---
+
+## 👥 Member vs. Normal Customers
+
+The analysis found:
+
+| Customer Type      | Average Transaction |
+| ------------------ | ------------------: |
+| 👤 Normal Customer |         **₹497.07** |
+| 👥 Member          |         **₹483.14** |
+
+Normal customers recorded a slightly higher average transaction value in this dataset.
+
+This creates an opportunity to investigate whether the current membership program is effectively increasing basket size.
+
+---
+
+## ⭐ Customer Satisfaction
+
+The overall average rating was:
+
+# ⭐ 3.99 / 5.00
+
+Branch-level differences provide an additional dimension for evaluating customer experience.
+
+For example:
+
+| Branch   | City      | Average Rating |
+| -------- | --------- | -------------: |
+| Branch A | Jaipur    |           3.84 |
+| Branch D | Bengaluru |           4.09 |
+
+These differences can be investigated further through operational and customer-experience data.
+
+---
+
+# 📊 Key Metrics at a Glance
+
+| Analytical Dimension       | Key Finding       |
+| -------------------------- | ----------------- |
+| 🏆 Top Product             | Cheese            |
+| 💰 Top Product Revenue     | ₹27,906.30        |
+| 🏪 Top Branch              | Branch C — Mumbai |
+| 💵 Top Branch Sales        | ₹72,469.45        |
+| 📦 Top Category            | Beverages         |
+| 💰 Top Category Sales      | ₹56,108.24        |
+| 💳 Preferred Payment       | UPI               |
+| 📱 UPI Transactions        | 127               |
+| 📊 UPI Share               | 25.4%             |
+| 👤 Normal Avg. Transaction | ₹497.07           |
+| 👥 Member Avg. Transaction | ₹483.14           |
+| ⭐ Overall Rating           | 3.99 / 5.00       |
+| 📅 Highest Sales Month     | April             |
+| 🧾 Total Transactions      | 500               |
+| 🌆 Cities                  | 4                 |
+| 📆 Observation Period      | Jan–Jul 2026      |
+
+---
+
+# 💡 Strategic Business Recommendations
+
+## 🏪 1. Investigate Branch C's Performance
+
+Study the operational and customer-related factors associated with Mumbai's higher sales performance.
+
+Potential areas include:
+
+* Inventory availability
+* Customer traffic
+* Product mix
+* Promotions
+* Store operations
+* Checkout efficiency
 
 ---
 
 ## 📦 2. Strengthen High-Performing Inventory
 
-Products and categories generating higher revenue should receive appropriate attention in:
+Products and categories with strong revenue contribution should receive appropriate attention in:
 
-* Inventory planning
-* Supplier negotiations
 * Stock replenishment
-* Promotional campaigns
-* Seasonal planning
+* Supplier negotiations
+* Inventory forecasting
+* Promotional planning
+* Seasonal preparation
 
 Cheese and beverages are particularly relevant based on this dataset.
 
 ---
 
-## 📱 3. Strengthen Digital Checkout Infrastructure
+## 📱 3. Strengthen Digital Payment Infrastructure
 
-With digital payment methods representing a substantial portion of transactions, the business should prioritize:
+Given the strong use of digital payment methods, the business can prioritize:
 
-* Reliable payment terminals
+* Reliable UPI availability
+* Payment terminal uptime
 * Fast transaction processing
-* UPI availability
 * Payment-failure monitoring
 * Smooth checkout experiences
 
 ---
 
-## 🎁 4. Improve Membership Value
+## 🎁 4. Improve Membership Engagement
 
-Since normal customers show a slightly higher average transaction value in this dataset, the membership program could be evaluated for opportunities such as:
+Since normal customers recorded a slightly higher average transaction value, the membership program could be evaluated for opportunities such as:
 
-* Cross-category offers
-* Personalized discounts
-* Bundle promotions
-* Reward-based purchasing
-* Higher-value member incentives
+* Cross-category bundles
+* Personalized offers
+* Member-exclusive promotions
+* Reward incentives
+* Higher-value purchase campaigns
 
 ---
 
-## ⭐ 5. Investigate Branch-Level Customer Experience
+## ⭐ 5. Investigate Customer Experience Differences
 
-Differences in customer ratings can be used as an early indicator for further investigation.
+Branch-level rating differences can be used to identify areas for further investigation.
 
-For example, Branch A's lower observed rating compared with Bengaluru could motivate analysis of:
+Possible factors include:
 
 * Staff interactions
-* Checkout waiting times
+* Checkout waiting time
 * Product availability
 * Store environment
-* Complaint patterns
+* Service quality
+* Customer complaints
 
 ---
 
-# 🧠 Analytical Methodology
+# 🧹 Data Preparation & Quality
 
-The project follows a structured **Exploratory Data Analysis (EDA)** workflow.
-
-```text
-Raw Dataset
-     │
-     ▼
-Data Loading
-     │
-     ▼
-Data Validation
-     │
-     ▼
-Data Cleaning
-     │
-     ▼
-Exploratory Data Analysis
-     │
-     ├── Branch Analysis
-     ├── Product Analysis
-     ├── Category Analysis
-     ├── Customer Analysis
-     ├── Payment Analysis
-     └── Time-Series Analysis
-     │
-     ▼
-Statistical Aggregation
-     │
-     ▼
-Data Visualization
-     │
-     ▼
-Business Insights
-     │
-     ▼
-Strategic Recommendations
-     │
-     ▼
-Excel KPI Dashboard
-```
-
----
-
-# 🧹 Data Preparation
-
-The dataset was processed before analysis to improve reliability and consistency.
+Before analysis, the dataset was examined and prepared for analytical use.
 
 The workflow includes:
 
@@ -482,60 +442,107 @@ The workflow includes:
 * Duplicate checking
 * Numerical validation
 * Categorical consistency checks
-* Date conversion
+* Date processing
 * Aggregation
 * KPI calculation
 * Visualization
 
-The cleaned dataset is provided as:
+The cleaned dataset is available as:
 
 **`supermarket_sales_clean.csv`**
 
 ---
 
-# 🛠️ Technology Stack
+# 🧠 Analytical Methodology
 
-| Technology              | Purpose                              |
-| ----------------------- | ------------------------------------ |
-| 🐍 **Python**           | Core analytical programming          |
-| 🐼 **Pandas**           | Data manipulation and analysis       |
-| 🔢 **NumPy**            | Numerical operations                 |
-| 📊 **Matplotlib**       | Data visualization                   |
-| 📓 **Jupyter Notebook** | Reproducible analysis workflow       |
-| 📗 **Microsoft Excel**  | KPI dashboard and business reporting |
-| 📄 **Microsoft Word**   | Stakeholder-facing report            |
-| 📦 **openpyxl**         | Excel workbook processing            |
+The project follows a structured **Exploratory Data Analysis (EDA)** approach.
+
+### Step 1 — Data Collection
+
+The supermarket transaction dataset is loaded into the Python environment.
+
+### Step 2 — Data Cleaning
+
+The data is inspected for quality issues and prepared for analysis.
+
+### Step 3 — Exploratory Analysis
+
+Multiple dimensions are investigated:
+
+* Branch
+* City
+* Product
+* Category
+* Customer type
+* Payment method
+* Date
+* Rating
+* Sales
+
+### Step 4 — Aggregation
+
+Business metrics are calculated using grouped and summarized transaction data.
+
+### Step 5 — Visualization
+
+Charts are created using **Matplotlib** to identify patterns and communicate findings.
+
+### Step 6 — Business Interpretation
+
+The analytical results are translated into practical business insights.
+
+### Step 7 — Dashboard Development
+
+Important KPIs and analytical results are organized into an Excel-based executive dashboard.
 
 ---
 
-# 📁 Repository Structure
+# 🛠️ Technology Stack
+
+| Technology              | Purpose                             |
+| ----------------------- | ----------------------------------- |
+| 🐍 **Python**           | Core analytical programming         |
+| 🐼 **Pandas**           | Data manipulation and analysis      |
+| 🔢 **NumPy**            | Numerical computation               |
+| 📊 **Matplotlib**       | Data visualization                  |
+| 📓 **Jupyter Notebook** | Reproducible EDA workflow           |
+| 📗 **Microsoft Excel**  | KPI dashboard and business analysis |
+| 📦 **openpyxl**         | Excel workbook processing           |
+| 📄 **Microsoft Word**   | Stakeholder-facing reporting        |
+
+---
+
+# 📁 Repository Architecture
 
 ```text
 supermarket-sales-analysis/
 │
 ├── 📓 Supermarket_Sales_Analysis.ipynb
-│   └── Complete Python EDA pipeline and visualizations
+│   └── Complete Python EDA pipeline and visualization code
 │
 ├── 📊 Supermarket_Sales_Dashboard.xlsx
-│   └── Executive KPI dashboard and analytical tables
+│   └── Executive KPI dashboard
 │
 ├── 📄 Supermarket_Sales_Report.docx
-│   └── Formal stakeholder-facing business report
+│   └── Stakeholder-facing business report
 │
 ├── 🧹 supermarket_sales_clean.csv
-│   └── Validated clean dataset
+│   └── Cleaned and validated dataset
+│
+├── 📊 chart_branch.png
+│   └── Branch performance visualization
+│
+├── 📊 chart_category.png
+│   └── Category revenue visualization
+│
+├── 📊 chart_monthly.png
+│   └── Monthly sales trend visualization
+│
+├── 📊 chart_payment.png
+│   └── Payment method distribution
 │
 ├── 🤖 AI_ASSISTANCE.md
-│   └── Documentation of AI tools and assistance used
-│
-├── 📊 charts/
-│   ├── branch_performance.png
-│   ├── category_revenue.png
-│   ├── monthly_sales.png
-│   ├── payment_methods.png
-│   ├── member_vs_normal.png
-│   ├── customer_ratings.png
-│   └── executive_dashboard.png
+│   └── Documentation of AI tools used during development
 │
 └── 📖 README.md
     └── Project documentation
@@ -563,173 +570,120 @@ cd supermarket-sales-analysis
 pip install pandas numpy matplotlib jupyter openpyxl
 ```
 
-## 4️⃣ Launch Jupyter Notebook
+## 4️⃣ Launch the Notebook
 
 ```bash
 jupyter notebook Supermarket_Sales_Analysis.ipynb
 ```
 
-## 5️⃣ Explore the Project
+## 5️⃣ Explore the Analysis
 
-You can then explore:
+You can explore:
 
-* Python EDA
-* Generated visualizations
-* Clean dataset
-* Excel KPI dashboard
-* Business report
-* Analytical findings
+* 📓 Complete Python analysis
+* 📊 Generated charts
+* 🧹 Clean dataset
+* 📗 Excel dashboard
+* 📄 Business report
+* 💡 Strategic recommendations
 
 ---
 
-# 📊 Reproducibility
+# 🔗 Direct Chart Links
 
-The project is designed around a reproducible analytical workflow.
+The project's charts are hosted directly in the GitHub repository and can also be accessed through their raw image URLs.
 
-To reproduce the analysis:
-
-1. Clone the repository.
-2. Install the required Python packages.
-3. Open the Jupyter Notebook.
-4. Run the notebook cells sequentially.
-5. Review the generated analytical outputs and visualizations.
-6. Open the Excel dashboard for the executive-level view.
+| Chart                 | Direct Link                                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| 🏪 Branch Performance | [View Chart](https://raw.githubusercontent.com/saviochackoxavier-tech/supermarket-sales-analysis/main/chart_branch.png)   |
+| 📦 Category Revenue   | [View Chart](https://raw.githubusercontent.com/saviochackoxavier-tech/supermarket-sales-analysis/main/chart_category.png) |
+| 📅 Monthly Sales      | [View Chart](https://raw.githubusercontent.com/saviochackoxavier-tech/supermarket-sales-analysis/main/chart_monthly.png)  |
+| 💳 Payment Methods    | [View Chart](https://raw.githubusercontent.com/saviochackoxavier-tech/supermarket-sales-analysis/main/chart_payment.png)  |
 
 ---
 
 # 📈 What This Project Demonstrates
 
-This project demonstrates practical skills in:
+This project demonstrates practical experience in:
 
 * ✅ Exploratory Data Analysis
 * ✅ Data Cleaning
 * ✅ Data Validation
 * ✅ Descriptive Statistics
+* ✅ Retail Analytics
 * ✅ KPI Development
 * ✅ Business Intelligence
 * ✅ Data Visualization
 * ✅ Customer Behavior Analysis
-* ✅ Retail Performance Analysis
-* ✅ Time-Series Analysis
+* ✅ Branch Performance Analysis
+* ✅ Product & Category Analysis
+* ✅ Payment Analytics
+* ✅ Time-Based Sales Analysis
 * ✅ Excel Dashboard Development
-* ✅ Business Insight Generation
-* ✅ Data-Driven Recommendation Development
+* ✅ Business Recommendation Development
 * ✅ Analytical Storytelling
-
----
-
-# 🔮 Future Improvements
-
-The current project focuses on descriptive and exploratory analytics. Future versions could extend the analysis with:
-
-### 🤖 Predictive Analytics
-
-Sales forecasting and demand prediction.
-
-### 📦 Inventory Analytics
-
-Stock-out risk and inventory optimization.
-
-### 👥 Customer Segmentation
-
-Customer clustering based on purchasing behavior.
-
-### 📈 Advanced BI
-
-Interactive Power BI or Tableau dashboards.
-
-### 🧠 Machine Learning
-
-Prediction of customer purchasing patterns and sales performance.
-
-### ☁️ Automated Analytics
-
-Automated data pipelines and scheduled reporting.
-
-> These are potential future extensions and are not part of the current analytical scope.
 
 ---
 
 # 📄 Project Deliverables
 
-| Deliverable                    | Description                             |
-| ------------------------------ | --------------------------------------- |
-| 📓 Jupyter Notebook            | Complete EDA and visualization workflow |
-| 📊 Excel Dashboard             | Executive KPI and business dashboard    |
-| 📄 Business Report             | Formal analysis and recommendations     |
-| 🧹 Clean Dataset               | Validated 500-row dataset               |
-| 📊 Chart Gallery               | Exported analytical visualizations      |
-| 🤖 AI Assistance Documentation | AI tools used during development        |
+| Deliverable                        | Description                             |
+| ---------------------------------- | --------------------------------------- |
+| 📓 **Jupyter Notebook**            | Complete EDA and visualization workflow |
+| 📊 **Excel Dashboard**             | Executive KPI dashboard                 |
+| 📄 **Business Report**             | Formal analytical report                |
+| 🧹 **Clean Dataset**               | Validated transaction dataset           |
+| 📊 **Chart Gallery**               | Key analytical visualizations           |
+| 🤖 **AI Assistance Documentation** | AI tools used during development        |
+| 📖 **README**                      | Complete project documentation          |
 
 ---
 
-# 🏆 Project Highlights
+# 🔮 Future Enhancements
 
-<div align="center">
+The current project focuses primarily on **descriptive analytics and exploratory analysis**.
 
-| 📊           | 🔎     | 💡     | 📈                  |
-| ------------ | ------ | ------ | ------------------- |
-| **500**      | **4**  | **7**  | **Multiple**        |
-| Transactions | Cities | Months | Business Dimensions |
+Potential future extensions include:
 
-</div>
+### 🤖 Predictive Sales Forecasting
 
-### Key Results
+Use historical sales patterns to forecast future demand.
 
-**₹72,469.45**
-Highest branch sales — Branch C, Mumbai
+### 📦 Inventory Intelligence
 
-**₹56,108.24**
-Highest category sales — Beverages
+Develop stock-out risk analysis and inventory optimization.
 
-**₹27,906.30**
-Highest product revenue — Cheese
+### 👥 Customer Segmentation
 
-**127**
-UPI transactions
+Apply clustering techniques to identify customer groups based on purchasing behavior.
 
-**3.99 / 5**
-Overall customer rating
+### 📊 Advanced Business Intelligence
+
+Build interactive dashboards using Power BI or Tableau.
+
+### 🧠 Machine Learning
+
+Develop predictive models for customer purchasing and sales behavior.
+
+### ☁️ Automated Analytics
+
+Introduce automated data pipelines and scheduled reporting.
+
+> These are potential future improvements and are not part of the current project implementation.
 
 ---
 
-# ⚠️ Analytical Scope & Limitations
+# ⚠️ Data Scope & Limitations
 
 The findings should be interpreted within the scope of the available dataset.
 
-* The analysis contains **500 transactions**.
-* The observation period covers **January–July 2026**.
-* The dataset represents four branches/cities.
-* Observed trends should not automatically be interpreted as long-term business trends.
-* Correlation or descriptive differences do not necessarily establish causation.
-* Recommendations are analytical suggestions based on the available transaction data.
-* Additional operational, demographic, marketing, and inventory data would be required for more advanced conclusions.
-
----
-
-# 📜 License
-
-This project is licensed under the **MIT License**.
-
-See the repository license file for complete terms.
-
----
-
-# 👨‍💻 Author
-
-<div align="center">
-
-### **Savio Chacko Xavier**
-
-**BCA Student | Data Analytics | AI & Technology**
-
-📊 Data Analytics & AI Internship Project
-
-<br>
-
-[![GitHub](https://img.shields.io/badge/GitHub-saviochackoxavier--tech-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/saviochackoxavier-tech)
-
-</div>
+* The dataset contains **500 transactions**.
+* The observation period is **January–July 2026**.
+* The analysis covers four branches/cities.
+* Observed patterns do not necessarily represent long-term trends.
+* Descriptive relationships should not automatically be interpreted as causal relationships.
+* Business recommendations are based on the available transaction-level information.
+* Additional operational, marketing, demographic, inventory, and historical data would enable deeper analysis.
 
 ---
 
@@ -737,26 +691,66 @@ See the repository license file for complete terms.
 
 This project was prepared as part of a:
 
-**Data Analytics & AI Internship Program**
+### **Data Analytics & AI Internship Program**
 
 **IBM SkillsBuild / BharatCares Track**
 
-The project demonstrates the application of Python-based data analysis, visualization, Excel business intelligence, and analytical storytelling to a retail-sales use case.
+The project applies practical data analytics and business intelligence techniques to a retail-sales scenario, combining:
+
+**Python Analysis + Visualization + Excel Dashboard + Business Reporting**
+
+---
+
+# 👨‍💻 Author
+
+<div align="center">
+
+## **Savio Chacko Xavier**
+
+### BCA Student | Data Analytics | AI & Technology
+
+**Data Analytics & AI Internship Project**
+
+<br>
+
+<a href="https://github.com/saviochackoxavier-tech">
+  <img src="https://img.shields.io/badge/GitHub-saviochackoxavier--tech-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+
+</div>
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**
+
+See the repository's license file for complete terms.
 
 ---
 
 <div align="center">
 
-## ⭐ If you found this project useful
+# 🛒 From Transactions
 
-**Consider starring the repository and exploring the analysis!**
+### ↓
+
+# 📊 To Data
+
+### ↓
+
+# 🔎 To Insights
+
+### ↓
+
+# 💡 To Business Decisions
 
 <br>
 
-### 🛒 From Transactions → 📊 Data → 💡 Insights → 🚀 Business Decisions
+**Built with Python • Pandas • NumPy • Matplotlib • Jupyter • Excel**
 
 <br>
 
-**Built with Python • Pandas • Matplotlib • Jupyter • Excel**
+⭐ **If you found this project useful, consider starring the repository!**
 
 </div>
